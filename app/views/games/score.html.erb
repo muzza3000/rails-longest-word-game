@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Score</h1>
+  <h2><%= @result[:message] %></h2>
+  <p>Score: <%= @result[:score].round(2) %></p>
+  <p>Time: <%= @result[:time].round(0) %> s</p>
+  <%= link_to 'Play Again', new_path, class: 'btn' %>
+</div>

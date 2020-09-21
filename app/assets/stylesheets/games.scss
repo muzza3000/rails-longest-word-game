@@ -1,0 +1,117 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ecf4f3;
+}
+
+h1 {
+  padding: 10px 15px;
+}
+
+.container h1 {
+  color: #ecf4f3;
+}
+
+form {
+  height: 40px;
+  width: auto;
+  padding: 0px;
+  text-decoration: none;
+}
+form input {
+  width: 100%;
+}
+form #word-input {
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid grey;
+}
+form #play-btn {
+  width: 100px;
+  background-color: #006a71;
+  color: #ecf4f3;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: #006a71;
+  color: #ecf4f3;
+  border: none;
+  border-radius: 5px;
+}
+
+.container {
+  width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #68b0ab;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+
+.letter-cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0px;
+  margin: none;
+  align-items: center;
+
+}
+
+.letter-cards ul li {
+  width: 30px;
+  height: 30px;
+  background-color: #ff7e67;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* RESPONSONSIVE */
+/* =========================================== */
+@media (max-width: 992px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    padding: 0px 10px;
+  }
+}
